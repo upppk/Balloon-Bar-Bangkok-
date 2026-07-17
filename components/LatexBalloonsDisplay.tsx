@@ -24,11 +24,7 @@ export default function LatexBalloonsDisplay() {
         <h2 className="font-heading font-bold text-3xl sm:text-4xl text-navy text-center mb-2">
           ลูกโป่งยาง Latex Balloons
         </h2>
-        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          ลูกโป่งยางคุณภาพดี หลากสีสันและบริการเติมฮีเลียม ราคาประหยัดเหมาะสำหรับปาร์ตี้และงานเลี้ยง
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
           {latexBalloonProducts.map((product) => (
             <div
               key={product.id}
@@ -198,7 +194,7 @@ export default function LatexBalloonsDisplay() {
               {/* Featured Image */}
               <div className="mb-6 bg-gray-50 rounded-xl overflow-hidden flex items-center justify-center p-4" style={{ height: '400px' }}>
                 <img
-                  src={selectedProduct.image}
+                  src={selectedProduct.colorImages?.[selectedColor] || selectedProduct.image}
                   alt={`${selectedProduct.name} - ${selectedColor}`}
                   className="max-w-full max-h-full object-contain"
                 />
@@ -212,12 +208,19 @@ export default function LatexBalloonsDisplay() {
                     <button
                       key={color}
                       onClick={() => setSelectedColor(color)}
-                      className={`p-3 rounded-lg font-medium transition-all text-sm ${
+                      className={`flex items-center gap-2 p-2 rounded-lg font-medium transition-all text-sm ${
                         selectedColor === color
                           ? "bg-navy text-white ring-2 ring-navy ring-offset-2"
                           : "bg-gray-100 text-navy hover:bg-gray-200"
                       }`}
                     >
+                      {selectedProduct.colorImages?.[color] && (
+                        <img
+                          src={selectedProduct.colorImages[color]}
+                          alt={color}
+                          className="w-8 h-8 object-contain rounded-full bg-white shrink-0"
+                        />
+                      )}
                       {color}
                     </button>
                   ))}
