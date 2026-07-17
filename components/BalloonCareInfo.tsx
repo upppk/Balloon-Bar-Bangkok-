@@ -82,6 +82,77 @@ export default function BalloonCareInfo() {
     },
   ];
 
+  const sizePricing = [
+    {
+      sizeEn: '12" Latex Balloon',
+      sizeTh: 'ลูกโป่งยาง ขนาด 12"',
+      items: [
+        { nameEn: "Plain Color", nameTh: "สีพื้น", priceEn: "55 THB / balloon", priceTh: "55 บาท/ลูก" },
+        { nameEn: "Chrome Color", nameTh: "สีโครม", priceEn: "90 THB / balloon", priceTh: "90 บาท/ลูก" },
+        { nameEn: "Clear + Glitter", nameTh: "ลูกใสใส่กลิตเตอร์", priceEn: "105 THB / balloon", priceTh: "105 บาท/ลูก" },
+      ],
+      notesEn: [
+        "Chrome color may look different under white/yellow lighting",
+        "Clear + Glitter balloons become cloudier over time",
+        "Weight to keep balloon from floating away: +10 THB/balloon",
+        "We don't recommend adding a message sticker — the balloon can't support the weight and may tear or curl",
+      ],
+      notesTh: [
+        "สีของลูกโป่งอาจเปลี่ยนตามแสงไฟ โดยรอบ เช่น ไฟขาว/ไฟเหลือง",
+        "เมื่อเวลาผ่านไปลูกโป่งใส+กลิตเตอร์จะขุ่นขึ้น",
+        "หากต้องการถ่วงน้ำหนักแยกลูก ค่าบริการเพิ่ม 10 บาท/ลูก",
+        "ไม่แนะนำให้ติดข้อความเนื่องจากลูกโป่งจะรับน้ำหนักไม่ไหว อาจทำให้ลูกโป่งเหี่ยวและตกเร็ว ข้อความที่เป็นสติกเกอร์จะเด่งขึ้นมา",
+      ],
+    },
+    {
+      sizeEn: '24" Latex & Orbz Balloon',
+      sizeTh: 'ลูกโป่งยาง และ ลูกโป่งใส ขนาด 24"',
+      items: [
+        { nameEn: "Bubble — clear w/ 9 mini balloons inside", nameTh: "บับเบิ้ล — ลูกโป่งใส ใส่ลูกโป่งเล็กด้านใน 9 ลูก", priceEn: "Plain 1,190 / Plain+Chrome 1,290 THB", priceTh: "สีพื้น 1,190 / สีพื้น+สีโครม 1,290 บาท" },
+        { nameEn: "Orbz + Glitter — clear w/ glitter inside", nameTh: "อควาใส่กลิตเตอร์ — ลูกโป่งใสใส่กลิตเตอร์", priceEn: "1,290 THB", priceTh: "1,290 บาท" },
+        { nameEn: "Orbz + Feather — clear w/ feathers inside", nameTh: "อควาใส่ขนนก — ลูกโป่งใสใส่ขนนก", priceEn: "1,490 THB", priceTh: "1,490 บาท" },
+        { nameEn: "Plain Latex Balloon", nameTh: "ลูกโป่งสีพื้น — ลูกยางธรรมดา", priceEn: "Plain 1,090 / Chrome 1,290 THB", priceTh: "สีพื้น 1,090 / สีโครม 1,290 บาท" },
+        { nameEn: "Orbz — clear balloon over latex balloon (2 layers)", nameTh: "อควาซ้อนลูกยาง — ลูกยางซ้อนลูกใส 2 ชั้น", priceEn: "Plain 1,390 / Chrome 1,590 THB", priceTh: "ลูกยางสีพื้น 1,390 / ลูกยางสีโครม 1,590 บาท" },
+        { nameEn: "Orbz + Glitter over latex balloon (2 layers, glitter between)", nameTh: "อควาซ้อนลูกยางใส่กลิตเตอร์ — ลูกโป่ง 2 ชั้น ใส่กลิตเตอร์ระหว่างชั้น", priceEn: "Plain 1,490 / Chrome 1,690 THB", priceTh: "ลูกยางสีพื้น 1,490 / ลูกยางสีโครม 1,690 บาท" },
+        { nameEn: "Hand-Painted Acrylic — clear balloon, hand painted", nameTh: "อควาเพ้นสีอคริลิค — ลูกโป่งใสเพ้นสี", priceEn: "1,390 THB", priceTh: "1,390 บาท" },
+        { nameEn: "Gem Deco — clear balloon with gems", nameTh: "อควาติดเพชร — ลูกโป่งใสติดเพชร", priceEn: "1,390 THB", priceTh: "1,390 บาท" },
+        { nameEn: "Plain Latex with Butterfly Decoration", nameTh: "ลูกยางสีพื้นติดผีเสื้อ — ลูกยางสีพื้น ติดลายผีเสื้อ", priceEn: '18" 1,390 / 24" 1,490 THB', priceTh: 'ขนาด 18" 1,390 / ขนาด 24" 1,490 บาท' },
+      ],
+      notesEn: [],
+      notesTh: [],
+    },
+    {
+      sizeEn: '36" Latex & Orbz Balloon',
+      sizeTh: 'ลูกโป่งยาง และ ลูกโป่งใส ขนาด 36"',
+      items: [
+        { nameEn: "Bubble — clear w/ 14-18 mini balloons inside", nameTh: "บับเบิ้ล — ลูกโป่งใส มีลูกโป่งเล็กด้านใน 14-18 ลูก", priceEn: "Plain 2,190 / Plain+Chrome 2,390 THB", priceTh: "สีพื้น 2,190 / สีพื้น+สีโครม 2,390 บาท" },
+        { nameEn: "Bubble + Glitter — clear w/ 14-18 mini balloons & glitter", nameTh: "บับเบิ้ล — ลูกโป่งใส มีลูกโป่งเล็กด้านใน 14-18 ลูกและกลิตเตอร์", priceEn: "Plain 2,290 / Plain+Chrome 2,490 THB", priceTh: "สีพื้น 2,290 / สีพื้น+สีโครม 2,490 บาท" },
+        { nameEn: "Orbz + Glitter — clear w/ glitter inside", nameTh: "อควาใส่กลิตเตอร์ — ลูกโป่งใสใส่กลิตเตอร์", priceEn: "1,790 THB", priceTh: "1,790 บาท" },
+        { nameEn: "Plain Latex Balloon", nameTh: "ลูกยางสีพื้น", priceEn: "1,690 THB", priceTh: "1,690 บาท" },
+        { nameEn: "Chrome Latex Balloon", nameTh: "ลูกโป่งยางสีโครม", priceEn: "1,890 THB", priceTh: "1,890 บาท" },
+        { nameEn: "Plain Latex with Butterfly Decoration", nameTh: "ลูกยางสีพื้นติดผีเสื้อ — ลูกยางสีพื้น ติดลายผีเสื้อ", priceEn: "1,890 THB", priceTh: "1,890 บาท" },
+        { nameEn: "Orbz + Feather — clear w/ feathers inside", nameTh: "อควาใส่ขนนก — ลูกโป่งใสใส่ขนนก", priceEn: "2,090 THB", priceTh: "2,090 บาท" },
+        { nameEn: "Orbz — clear balloon over latex balloon (2 layers)", nameTh: "อควาซ้อนลูกยาง — ลูกยางซ้อนลูกใส 2 ชั้น", priceEn: "Plain 1,990 / Chrome 2,190 THB", priceTh: "ลูกยางสีพื้น 1,990 / ลูกยางสีโครม 2,190 บาท" },
+        { nameEn: "Orbz + Glitter over latex balloon (2 layers, glitter between)", nameTh: "อควาซ้อนลูกยางใส่กลิตเตอร์ — ลูกโป่ง 2 ชั้น ใส่กลิตเตอร์ระหว่างชั้น", priceEn: "Plain 2,090 / Chrome 2,390 THB", priceTh: "ลูกยางสีพื้น 2,090 / ลูกยางสีโครม 2,390 บาท" },
+      ],
+      notesEn: [],
+      notesTh: [],
+    },
+  ];
+
+  const size24And36Notes = {
+    en: [
+      "You can add up to 1-2 paper messages, or a ribbon + bow",
+      "Lifespan: 1-3 days indoors (air-conditioned). Outdoors approx. 2-6 hours depending on temperature. Ideal temp: 24-27°C",
+      "Message on 18\" and 24\" balloons: plain color message is free. Silver/Gold message costs 80 THB/side",
+    ],
+    th: [
+      "สามารถใส่พู่กระดาษได้ 1-2 ชิ้น หรือเป็นริบบิ้นยาว และผูกโบว์",
+      "อายุการใช้งาน 1-3 วัน ในห้องแอร์ กรณีใช้งาน Outdoor ลูกโป่งจะอยู่ได้ประมาณ 2-6 ชม. ขึ้นอยู่กับอุณหภูมิ อุณหภูมิที่เหมาะสม 24-27 องศา",
+      "ข้อความบนลูกโป่งขนาด 18\" และ 24\": ข้อความสีพื้น ไม่มีค่าบริการ / ข้อความสีเงิน-สีทอง 80 บาท/ด้าน",
+    ],
+  };
+
   const lifeSpans = [
     { categoryEn: "LATEX BALLOON", categoryTh: "ลูกโป่งยาง", items: [
       { typeEn: '6" Latex', typeTh: '6" ยาง', span: "1-2 Hours" },
@@ -181,6 +252,57 @@ export default function BalloonCareInfo() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Section 1.5: Balloon Sizes & Pricing */}
+        <div className="mb-16">
+          <h2 className="font-heading font-bold text-3xl sm:text-4xl text-navy text-center mb-2">
+            {language === "en" ? "Balloon Sizes & Pricing" : "ราคาลูกโป่งตามขนาด"}
+          </h2>
+          <p className="text-center text-gray-600 mb-10">
+            {language === "en" ? "ราคาลูกโป่งตามขนาด" : "Balloon Sizes & Pricing"}
+          </p>
+
+          <div className="space-y-8">
+            {sizePricing.map((section, idx) => (
+              <div key={idx} className="bg-white rounded-lg shadow overflow-hidden">
+                <div className="bg-navy text-white px-6 py-3 font-semibold text-lg">
+                  {language === "en" ? section.sizeEn : section.sizeTh}
+                </div>
+                <div className="divide-y">
+                  {section.items.map((item, itemIdx) => (
+                    <div key={itemIdx} className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 px-6 py-3 hover:bg-gray-50">
+                      <span className="text-gray-800 font-medium">
+                        {language === "en" ? item.nameEn : item.nameTh}
+                      </span>
+                      <span className="text-navy font-semibold sm:text-right sm:shrink-0">
+                        {language === "en" ? item.priceEn : item.priceTh}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+                {(language === "en" ? section.notesEn : section.notesTh).length > 0 && (
+                  <ul className="px-6 py-4 bg-blue-50 space-y-1">
+                    {(language === "en" ? section.notesEn : section.notesTh).map((note, noteIdx) => (
+                      <li key={noteIdx} className="text-xs text-gray-600 flex items-start gap-2">
+                        <span className="text-navy">**</span>
+                        <span>{note}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+
+          <ul className="mt-4 px-4 py-3 bg-orange-100 text-orange-800 rounded-lg space-y-1">
+            {(language === "en" ? size24And36Notes.en : size24And36Notes.th).map((note, idx) => (
+              <li key={idx} className="text-sm flex items-start gap-2">
+                <span>💡</span>
+                <span>{note}</span>
+              </li>
+            ))}
+          </ul>
         </div>
 
         {/* Section 2: Ordering Tips */}
