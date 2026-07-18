@@ -105,7 +105,7 @@ export default function BalloonCareInfo() {
       ],
     },
     {
-      sizeEn: '24" Latex & Orbz Balloon',
+      sizeEn: '24" Latex & Aqua Balloon',
       sizeTh: 'ลูกโป่งยาง และ ลูกโป่งใส ขนาด 24"',
       items: [
         { nameEn: 'Bubble 24" + 9 Mini Balloons (6") Inside + Message', nameTh: "บับเบิ้ล — ลูกโป่งใส ใส่ลูกโป่งเล็กด้านใน 9 ลูก", priceEn: "Plain 1,190 / Plain+Chrome 1,290 THB", priceTh: "สีพื้น 1,190 / สีพื้น+สีโครม 1,290 บาท", image: "/images/products/size-pricing/24in_bubble.png" },
