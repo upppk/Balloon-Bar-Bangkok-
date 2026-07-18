@@ -108,7 +108,7 @@ export default function BalloonCareInfo() {
       sizeEn: '24" Latex & Orbz Balloon',
       sizeTh: 'ลูกโป่งยาง และ ลูกโป่งใส ขนาด 24"',
       items: [
-        { nameEn: 'Bubble + 9 mini balloons inside (6")', nameTh: "บับเบิ้ล — ลูกโป่งใส ใส่ลูกโป่งเล็กด้านใน 9 ลูก", priceEn: "Plain 1,190 / Plain+Chrome 1,290 THB", priceTh: "สีพื้น 1,190 / สีพื้น+สีโครม 1,290 บาท", image: "/images/products/size-pricing/24in_bubble.png" },
+        { nameEn: 'Bubble 24" + 9 Mini Balloons (6") Inside + Message', nameTh: "บับเบิ้ล — ลูกโป่งใส ใส่ลูกโป่งเล็กด้านใน 9 ลูก", priceEn: "Plain 1,190 / Plain+Chrome 1,290 THB", priceTh: "สีพื้น 1,190 / สีพื้น+สีโครม 1,290 บาท", image: "/images/products/size-pricing/24in_bubble.png" },
         { nameEn: 'Aqua 24" + Glitter + Message', nameTh: "อควาใส่กลิตเตอร์ — ลูกโป่งใสใส่กลิตเตอร์", priceEn: "1,290 THB", priceTh: "1,290 บาท", image: "/images/products/size-pricing/24in_glitter-orbz.png" },
         { nameEn: 'Aqua 24" + Feather + Message', nameTh: "อควาใส่ขนนก — ลูกโป่งใสใส่ขนนก", priceEn: "1,490 THB", priceTh: "1,490 บาท", image: "/images/products/size-pricing/24in_feather-orbz.png" },
         { nameEn: 'Latex Balloon 24"', nameTh: "ลูกโป่งสีพื้น — ลูกยางธรรมดา", priceEn: "Plain 1,090 / Chrome 1,290 THB", priceTh: "สีพื้น 1,090 / สีโครม 1,290 บาท", image: "/images/products/size-pricing/24in_plain-latex.png" },
