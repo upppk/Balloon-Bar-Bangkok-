@@ -87,9 +87,9 @@ export default function BalloonCareInfo() {
       sizeEn: '12" Latex Balloon',
       sizeTh: 'ลูกโป่งยาง ขนาด 12"',
       items: [
-        { nameEn: "Plain Color", nameTh: "สีพื้น", priceEn: "55 THB / balloon", priceTh: "55 บาท/ลูก" },
-        { nameEn: "Chrome Color", nameTh: "สีโครม", priceEn: "90 THB / balloon", priceTh: "90 บาท/ลูก" },
-        { nameEn: "Clear + Glitter", nameTh: "ลูกใสใส่กลิตเตอร์", priceEn: "105 THB / balloon", priceTh: "105 บาท/ลูก" },
+        { nameEn: "Plain Color", nameTh: "สีพื้น", priceEn: "55 THB / balloon", priceTh: "55 บาท/ลูก", image: "/images/products/size-pricing/12in_plain.png" },
+        { nameEn: "Chrome Color", nameTh: "สีโครม", priceEn: "90 THB / balloon", priceTh: "90 บาท/ลูก", image: "/images/products/size-pricing/12in_chrome.png" },
+        { nameEn: "Clear + Glitter", nameTh: "ลูกใสใส่กลิตเตอร์", priceEn: "105 THB / balloon", priceTh: "105 บาท/ลูก", image: "/images/products/size-pricing/12in_glitter.png" },
       ],
       notesEn: [
         "Chrome color may look different under white/yellow lighting",
@@ -108,15 +108,15 @@ export default function BalloonCareInfo() {
       sizeEn: '24" Latex & Orbz Balloon',
       sizeTh: 'ลูกโป่งยาง และ ลูกโป่งใส ขนาด 24"',
       items: [
-        { nameEn: "Bubble — clear w/ 9 mini balloons inside", nameTh: "บับเบิ้ล — ลูกโป่งใส ใส่ลูกโป่งเล็กด้านใน 9 ลูก", priceEn: "Plain 1,190 / Plain+Chrome 1,290 THB", priceTh: "สีพื้น 1,190 / สีพื้น+สีโครม 1,290 บาท" },
-        { nameEn: "Orbz + Glitter — clear w/ glitter inside", nameTh: "อควาใส่กลิตเตอร์ — ลูกโป่งใสใส่กลิตเตอร์", priceEn: "1,290 THB", priceTh: "1,290 บาท" },
-        { nameEn: "Orbz + Feather — clear w/ feathers inside", nameTh: "อควาใส่ขนนก — ลูกโป่งใสใส่ขนนก", priceEn: "1,490 THB", priceTh: "1,490 บาท" },
-        { nameEn: "Plain Latex Balloon", nameTh: "ลูกโป่งสีพื้น — ลูกยางธรรมดา", priceEn: "Plain 1,090 / Chrome 1,290 THB", priceTh: "สีพื้น 1,090 / สีโครม 1,290 บาท" },
-        { nameEn: "Orbz — clear balloon over latex balloon (2 layers)", nameTh: "อควาซ้อนลูกยาง — ลูกยางซ้อนลูกใส 2 ชั้น", priceEn: "Plain 1,390 / Chrome 1,590 THB", priceTh: "ลูกยางสีพื้น 1,390 / ลูกยางสีโครม 1,590 บาท" },
-        { nameEn: "Orbz + Glitter over latex balloon (2 layers, glitter between)", nameTh: "อควาซ้อนลูกยางใส่กลิตเตอร์ — ลูกโป่ง 2 ชั้น ใส่กลิตเตอร์ระหว่างชั้น", priceEn: "Plain 1,490 / Chrome 1,690 THB", priceTh: "ลูกยางสีพื้น 1,490 / ลูกยางสีโครม 1,690 บาท" },
-        { nameEn: "Hand-Painted Acrylic — clear balloon, hand painted", nameTh: "อควาเพ้นสีอคริลิค — ลูกโป่งใสเพ้นสี", priceEn: "1,390 THB", priceTh: "1,390 บาท" },
-        { nameEn: "Gem Deco — clear balloon with gems", nameTh: "อควาติดเพชร — ลูกโป่งใสติดเพชร", priceEn: "1,390 THB", priceTh: "1,390 บาท" },
-        { nameEn: "Plain Latex with Butterfly Decoration", nameTh: "ลูกยางสีพื้นติดผีเสื้อ — ลูกยางสีพื้น ติดลายผีเสื้อ", priceEn: '18" 1,390 / 24" 1,490 THB', priceTh: 'ขนาด 18" 1,390 / ขนาด 24" 1,490 บาท' },
+        { nameEn: "Bubble — clear w/ 9 mini balloons inside", nameTh: "บับเบิ้ล — ลูกโป่งใส ใส่ลูกโป่งเล็กด้านใน 9 ลูก", priceEn: "Plain 1,190 / Plain+Chrome 1,290 THB", priceTh: "สีพื้น 1,190 / สีพื้น+สีโครม 1,290 บาท", image: "/images/products/size-pricing/24in_bubble.png" },
+        { nameEn: "Orbz + Glitter — clear w/ glitter inside", nameTh: "อควาใส่กลิตเตอร์ — ลูกโป่งใสใส่กลิตเตอร์", priceEn: "1,290 THB", priceTh: "1,290 บาท", image: "/images/products/size-pricing/24in_glitter-orbz.png" },
+        { nameEn: "Orbz + Feather — clear w/ feathers inside", nameTh: "อควาใส่ขนนก — ลูกโป่งใสใส่ขนนก", priceEn: "1,490 THB", priceTh: "1,490 บาท", image: "/images/products/size-pricing/24in_feather-orbz.png" },
+        { nameEn: "Plain Latex Balloon", nameTh: "ลูกโป่งสีพื้น — ลูกยางธรรมดา", priceEn: "Plain 1,090 / Chrome 1,290 THB", priceTh: "สีพื้น 1,090 / สีโครม 1,290 บาท", image: "/images/products/size-pricing/24in_plain-latex.png" },
+        { nameEn: "Orbz — clear balloon over latex balloon (2 layers)", nameTh: "อควาซ้อนลูกยาง — ลูกยางซ้อนลูกใส 2 ชั้น", priceEn: "Plain 1,390 / Chrome 1,590 THB", priceTh: "ลูกยางสีพื้น 1,390 / ลูกยางสีโครม 1,590 บาท", image: "/images/products/size-pricing/24in_layered-orbz.png" },
+        { nameEn: "Orbz + Glitter over latex balloon (2 layers, glitter between)", nameTh: "อควาซ้อนลูกยางใส่กลิตเตอร์ — ลูกโป่ง 2 ชั้น ใส่กลิตเตอร์ระหว่างชั้น", priceEn: "Plain 1,490 / Chrome 1,690 THB", priceTh: "ลูกยางสีพื้น 1,490 / ลูกยางสีโครม 1,690 บาท", image: "/images/products/size-pricing/24in_layered-glitter-orbz.png" },
+        { nameEn: "Hand-Painted Acrylic — clear balloon, hand painted", nameTh: "อควาเพ้นสีอคริลิค — ลูกโป่งใสเพ้นสี", priceEn: "1,390 THB", priceTh: "1,390 บาท", image: "/images/products/size-pricing/24in_acrylic-paint.png" },
+        { nameEn: "Gem Deco — clear balloon with gems", nameTh: "อควาติดเพชร — ลูกโป่งใสติดเพชร", priceEn: "1,390 THB", priceTh: "1,390 บาท", image: "/images/products/size-pricing/24in_gem-orbz.png" },
+        { nameEn: "Plain Latex with Butterfly Decoration", nameTh: "ลูกยางสีพื้นติดผีเสื้อ — ลูกยางสีพื้น ติดลายผีเสื้อ", priceEn: '18" 1,390 / 24" 1,490 THB', priceTh: 'ขนาด 18" 1,390 / ขนาด 24" 1,490 บาท', image: "/images/products/size-pricing/24in_butterfly-latex.png" },
       ],
       notesEn: [],
       notesTh: [],
@@ -125,15 +125,15 @@ export default function BalloonCareInfo() {
       sizeEn: '36" Latex & Orbz Balloon',
       sizeTh: 'ลูกโป่งยาง และ ลูกโป่งใส ขนาด 36"',
       items: [
-        { nameEn: "Bubble — clear w/ 14-18 mini balloons inside", nameTh: "บับเบิ้ล — ลูกโป่งใส มีลูกโป่งเล็กด้านใน 14-18 ลูก", priceEn: "Plain 2,190 / Plain+Chrome 2,390 THB", priceTh: "สีพื้น 2,190 / สีพื้น+สีโครม 2,390 บาท" },
-        { nameEn: "Bubble + Glitter — clear w/ 14-18 mini balloons & glitter", nameTh: "บับเบิ้ล — ลูกโป่งใส มีลูกโป่งเล็กด้านใน 14-18 ลูกและกลิตเตอร์", priceEn: "Plain 2,290 / Plain+Chrome 2,490 THB", priceTh: "สีพื้น 2,290 / สีพื้น+สีโครม 2,490 บาท" },
-        { nameEn: "Orbz + Glitter — clear w/ glitter inside", nameTh: "อควาใส่กลิตเตอร์ — ลูกโป่งใสใส่กลิตเตอร์", priceEn: "1,790 THB", priceTh: "1,790 บาท" },
-        { nameEn: "Plain Latex Balloon", nameTh: "ลูกยางสีพื้น", priceEn: "1,690 THB", priceTh: "1,690 บาท" },
-        { nameEn: "Chrome Latex Balloon", nameTh: "ลูกโป่งยางสีโครม", priceEn: "1,890 THB", priceTh: "1,890 บาท" },
-        { nameEn: "Plain Latex with Butterfly Decoration", nameTh: "ลูกยางสีพื้นติดผีเสื้อ — ลูกยางสีพื้น ติดลายผีเสื้อ", priceEn: "1,890 THB", priceTh: "1,890 บาท" },
-        { nameEn: "Orbz + Feather — clear w/ feathers inside", nameTh: "อควาใส่ขนนก — ลูกโป่งใสใส่ขนนก", priceEn: "2,090 THB", priceTh: "2,090 บาท" },
-        { nameEn: "Orbz — clear balloon over latex balloon (2 layers)", nameTh: "อควาซ้อนลูกยาง — ลูกยางซ้อนลูกใส 2 ชั้น", priceEn: "Plain 1,990 / Chrome 2,190 THB", priceTh: "ลูกยางสีพื้น 1,990 / ลูกยางสีโครม 2,190 บาท" },
-        { nameEn: "Orbz + Glitter over latex balloon (2 layers, glitter between)", nameTh: "อควาซ้อนลูกยางใส่กลิตเตอร์ — ลูกโป่ง 2 ชั้น ใส่กลิตเตอร์ระหว่างชั้น", priceEn: "Plain 2,090 / Chrome 2,390 THB", priceTh: "ลูกยางสีพื้น 2,090 / ลูกยางสีโครม 2,390 บาท" },
+        { nameEn: "Bubble — clear w/ 14-18 mini balloons inside", nameTh: "บับเบิ้ล — ลูกโป่งใส มีลูกโป่งเล็กด้านใน 14-18 ลูก", priceEn: "Plain 2,190 / Plain+Chrome 2,390 THB", priceTh: "สีพื้น 2,190 / สีพื้น+สีโครม 2,390 บาท", image: "/images/products/size-pricing/36in_bubble.png" },
+        { nameEn: "Bubble + Glitter — clear w/ 14-18 mini balloons & glitter", nameTh: "บับเบิ้ล — ลูกโป่งใส มีลูกโป่งเล็กด้านใน 14-18 ลูกและกลิตเตอร์", priceEn: "Plain 2,290 / Plain+Chrome 2,490 THB", priceTh: "สีพื้น 2,290 / สีพื้น+สีโครม 2,490 บาท", image: "/images/products/size-pricing/36in_bubble-glitter.png" },
+        { nameEn: "Orbz + Glitter — clear w/ glitter inside", nameTh: "อควาใส่กลิตเตอร์ — ลูกโป่งใสใส่กลิตเตอร์", priceEn: "1,790 THB", priceTh: "1,790 บาท", image: "/images/products/size-pricing/36in_glitter-orbz.png" },
+        { nameEn: "Plain Latex Balloon", nameTh: "ลูกยางสีพื้น", priceEn: "1,690 THB", priceTh: "1,690 บาท", image: "/images/products/size-pricing/36in_plain-latex.png" },
+        { nameEn: "Chrome Latex Balloon", nameTh: "ลูกโป่งยางสีโครม", priceEn: "1,890 THB", priceTh: "1,890 บาท", image: "/images/products/size-pricing/36in_chrome-latex.png" },
+        { nameEn: "Plain Latex with Butterfly Decoration", nameTh: "ลูกยางสีพื้นติดผีเสื้อ — ลูกยางสีพื้น ติดลายผีเสื้อ", priceEn: "1,890 THB", priceTh: "1,890 บาท", image: "/images/products/size-pricing/36in_butterfly-latex.png" },
+        { nameEn: "Orbz + Feather — clear w/ feathers inside", nameTh: "อควาใส่ขนนก — ลูกโป่งใสใส่ขนนก", priceEn: "2,090 THB", priceTh: "2,090 บาท", image: "/images/products/size-pricing/36in_feather-orbz.png" },
+        { nameEn: "Orbz — clear balloon over latex balloon (2 layers)", nameTh: "อควาซ้อนลูกยาง — ลูกยางซ้อนลูกใส 2 ชั้น", priceEn: "Plain 1,990 / Chrome 2,190 THB", priceTh: "ลูกยางสีพื้น 1,990 / ลูกยางสีโครม 2,190 บาท", image: "/images/products/size-pricing/36in_layered-orbz.png" },
+        { nameEn: "Orbz + Glitter over latex balloon (2 layers, glitter between)", nameTh: "อควาซ้อนลูกยางใส่กลิตเตอร์ — ลูกโป่ง 2 ชั้น ใส่กลิตเตอร์ระหว่างชั้น", priceEn: "Plain 2,090 / Chrome 2,390 THB", priceTh: "ลูกยางสีพื้น 2,090 / ลูกยางสีโครม 2,390 บาท", image: "/images/products/size-pricing/36in_layered-glitter-orbz.png" },
       ],
       notesEn: [],
       notesTh: [],
@@ -271,13 +271,20 @@ export default function BalloonCareInfo() {
                 </div>
                 <div className="divide-y">
                   {section.items.map((item, itemIdx) => (
-                    <div key={itemIdx} className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 px-6 py-3 hover:bg-gray-50">
-                      <span className="text-gray-800 font-medium">
-                        {language === "en" ? item.nameEn : item.nameTh}
-                      </span>
-                      <span className="text-navy font-semibold sm:text-right sm:shrink-0">
-                        {language === "en" ? item.priceEn : item.priceTh}
-                      </span>
+                    <div key={itemIdx} className="flex items-center gap-4 px-6 py-3 hover:bg-gray-50">
+                      <img
+                        src={item.image}
+                        alt={language === "en" ? item.nameEn : item.nameTh}
+                        className="w-14 h-14 rounded-full object-cover bg-blue-50 shrink-0"
+                      />
+                      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 flex-1 min-w-0">
+                        <span className="text-gray-800 font-medium">
+                          {language === "en" ? item.nameEn : item.nameTh}
+                        </span>
+                        <span className="text-navy font-semibold sm:text-right sm:shrink-0">
+                          {language === "en" ? item.priceEn : item.priceTh}
+                        </span>
+                      </div>
                     </div>
                   ))}
                 </div>
