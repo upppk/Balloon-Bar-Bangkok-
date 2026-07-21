@@ -152,6 +152,14 @@ export const foilBalloonProducts: FoilBalloonProduct[] = [
     image: "/images/products/foil-balloon/009.jpg",
     alt: "20 inch Heart Foil Balloon - Matte Colors",
     colors: ["Matte White", "Matte Pastel Pink", "Matte Pastel Purple", "Matte Pastel Blue", "Matte Pastel Yellow", "Matte Pastel Green"],
+    colorImages: {
+      "Matte White": "/images/products/foil-balloon/heart-20-matte-pastel/01-matte-white.png",
+      "Matte Pastel Pink": "/images/products/foil-balloon/heart-20-matte-pastel/02-matte-pastel-pink.png",
+      "Matte Pastel Purple": "/images/products/foil-balloon/heart-20-matte-pastel/03-matte-pastel-purple.png",
+      "Matte Pastel Blue": "/images/products/foil-balloon/heart-20-matte-pastel/04-matte-pastel-blue.png",
+      "Matte Pastel Yellow": "/images/products/foil-balloon/heart-20-matte-pastel/05-matte-pastel-yellow.png",
+      "Matte Pastel Green": "/images/products/foil-balloon/heart-20-matte-pastel/06-matte-pastel-green.png",
+    },
     pricing: [
       { size: "Size 20\" Matte (Non-Float)", airPrice: 100, heliumPrice: 250 },
     ],
@@ -310,7 +318,7 @@ export const foilBalloonProducts: FoilBalloonProduct[] = [
   },
   {
     id: "jumbo-round-foil",
-    name: "Jumbo Round Foil Balloon (36\"-40\")",
+    name: "20\" Pastel Heart Foil Balloon",
     description: "",
     image: "/images/products/foil-balloon/019.jpg",
     alt: "Jumbo 36-40 inch Round Foil Balloons",
