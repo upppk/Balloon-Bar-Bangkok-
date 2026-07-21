@@ -21,7 +21,7 @@ export default function Hero() {
         aria-hidden
         width={140}
         height={256}
-        className="hidden sm:block absolute -left-6 top-16 w-24 md:w-32 opacity-90 animate-float pointer-events-none select-none"
+        className="hidden sm:block absolute -left-6 top-16 w-[125px] md:w-[166px] opacity-90 animate-float pointer-events-none select-none"
       />
       <Image
         src="/images/brand/balloon-deco.png"
@@ -29,7 +29,7 @@ export default function Hero() {
         aria-hidden
         width={140}
         height={256}
-        className="hidden sm:block absolute right-2 top-32 w-16 md:w-24 opacity-80 animate-float-delay pointer-events-none select-none hue-rotate-[70deg]"
+        className="hidden sm:block absolute right-2 top-32 w-[83px] md:w-[125px] opacity-80 animate-float-delay pointer-events-none select-none hue-rotate-[70deg]"
       />
       <Image
         src="/images/brand/balloon-deco.png"
@@ -37,7 +37,50 @@ export default function Hero() {
         aria-hidden
         width={140}
         height={256}
-        className="hidden md:block absolute left-1/4 bottom-10 w-14 opacity-70 animate-float-slow pointer-events-none select-none hue-rotate-[190deg]"
+        className="hidden md:block absolute left-1/4 bottom-10 w-[73px] opacity-70 animate-float-slow pointer-events-none select-none hue-rotate-[190deg]"
+      />
+      <Image
+        src="/images/brand/balloon-deco.png"
+        alt=""
+        aria-hidden
+        width={140}
+        height={256}
+        style={{ animationDelay: "1s" }}
+        className="hidden sm:block absolute right-8 top-4 w-[78px] opacity-80 animate-float pointer-events-none select-none hue-rotate-[300deg]"
+      />
+      <Image
+        src="/images/brand/balloon-deco.png"
+        alt=""
+        aria-hidden
+        width={140}
+        height={256}
+        style={{ animationDelay: "0.5s" }}
+        className="hidden md:block absolute right-[22%] bottom-6 w-[91px] opacity-75 animate-float-slow pointer-events-none select-none hue-rotate-[40deg]"
+      />
+      <Image
+        src="/images/brand/balloon-deco.png"
+        alt=""
+        aria-hidden
+        width={140}
+        height={256}
+        className="hidden lg:block absolute left-2 top-1/2 w-[65px] opacity-70 animate-float-delay pointer-events-none select-none hue-rotate-[150deg]"
+      />
+      <Image
+        src="/images/brand/balloon-deco.png"
+        alt=""
+        aria-hidden
+        width={140}
+        height={256}
+        style={{ animationDelay: "1.5s" }}
+        className="hidden sm:block absolute left-4 bottom-4 w-[85px] opacity-80 animate-float pointer-events-none select-none hue-rotate-[260deg]"
+      />
+      <Image
+        src="/images/brand/balloon-deco.png"
+        alt=""
+        aria-hidden
+        width={140}
+        height={256}
+        className="hidden lg:block absolute right-[35%] top-6 w-[59px] opacity-70 animate-float-slow pointer-events-none select-none hue-rotate-[20deg]"
       />
 
       <div className="relative mx-auto max-w-5xl px-6 py-24 sm:py-32 text-center flex flex-col items-center">
