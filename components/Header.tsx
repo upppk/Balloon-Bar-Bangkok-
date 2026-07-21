@@ -6,15 +6,15 @@ import { useState } from "react";
 import { site } from "@/data/site";
 
 const navLinks = [
-  { href: "/#about", label: "เกี่ยวกับเรา" },
-  { href: "/#products", label: "สินค้า" },
-  { href: "/#services", label: "บริการ" },
-  { href: "/#portfolio", label: "ผลงาน" },
-  { href: "/catalog", label: "แคตตาล็อก" },
-  { href: "/foil-balloons", label: "ลูกโป่งฟลอย" },
-  { href: "/latex-balloons", label: "ลูกโป่งยาง" },
-  { href: "/products", label: "เมนู & ราคา" },
-  { href: "/#contact", label: "ติดต่อเรา" },
+  { href: "/#about", label: "About" },
+  { href: "/#products", label: "Products" },
+  { href: "/#services", label: "Services" },
+  { href: "/#portfolio", label: "Portfolio" },
+  { href: "/catalog", label: "Catalog" },
+  { href: "/foil-balloons", label: "Foil Balloons" },
+  { href: "/latex-balloons", label: "Latex Balloons" },
+  { href: "/products", label: "Menu & Pricing" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Header() {
@@ -50,7 +50,7 @@ export default function Header() {
           rel="noopener noreferrer"
           className="hidden lg:inline-flex items-center rounded-full bg-red hover:bg-red-dark text-white font-heading font-semibold px-5 py-2.5 shadow-md transition-colors"
         >
-          ทักไลน์สอบถาม
+          Chat on LINE
         </a>
 
         <button
@@ -87,7 +87,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="mt-1 inline-flex items-center justify-center rounded-full bg-red text-white font-heading font-semibold px-5 py-2.5 shadow-md"
             >
-              ทักไลน์สอบถาม
+              Chat on LINE
             </a>
           </nav>
         </div>
