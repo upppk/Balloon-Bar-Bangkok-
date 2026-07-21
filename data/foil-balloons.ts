@@ -332,8 +332,15 @@ export const foilBalloonProducts: FoilBalloonProduct[] = [
       "Matte Pastel Green": "/images/products/foil-balloon/heart-20-matte-pastel/06-matte-pastel-green.png",
     },
     pricing: [
-      { size: "Size 36\" (Non-Float)", airPrice: 550, heliumPrice: 1090 },
-      { size: "Size 40\" (Non-Float)", airPrice: 590, heliumPrice: 1490 },
+      { size: "Size 20\" - Matte Color (Non-Float)", airPrice: 100, heliumPrice: 250 },
     ],
+    addOns: {
+      title: "Add Message on 18\" Foil Balloon",
+      items: [
+        { name: "Plain Color", price: 25 },
+        { name: "Silver and Gold", price: 50 },
+        { name: "Individual Balloon Weights", price: 10 },
+      ],
+    },
   },
 ];
