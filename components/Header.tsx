@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b-4 border-navy">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 flex items-center justify-between h-18 py-2">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 flex items-center justify-between gap-4 h-18 py-2">
         <Link href="#top" className="flex items-center gap-2 shrink-0">
           <img
             src="/images/brand/logo.svg"
@@ -36,7 +36,7 @@ export default function Header() {
           </span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-6 font-medium text-navy">
+        <nav className="hidden xl:flex items-center gap-5 font-medium text-navy text-[15px] whitespace-nowrap">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href} className="hover:text-red transition-colors">
               {link.label}
@@ -48,14 +48,14 @@ export default function Header() {
           href={site.line.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden lg:inline-flex items-center rounded-full bg-red hover:bg-red-dark text-white font-heading font-semibold px-5 py-2.5 shadow-md transition-colors"
+          className="hidden xl:inline-flex items-center shrink-0 whitespace-nowrap rounded-full bg-red hover:bg-red-dark text-white font-heading font-semibold px-5 py-2.5 shadow-md transition-colors"
         >
           Chat on LINE
         </a>
 
         <button
           aria-label="เปิดเมนู"
-          className="lg:hidden text-navy"
+          className="xl:hidden text-navy"
           onClick={() => setOpen((v) => !v)}
         >
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -69,7 +69,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="lg:hidden bg-cream border-t-2 border-navy/20 px-4 pb-4">
+        <div className="xl:hidden bg-cream border-t-2 border-navy/20 px-4 pb-4">
           <nav className="flex flex-col gap-3 pt-3 font-medium text-navy">
             {navLinks.map((link) => (
               <a
