@@ -320,8 +320,8 @@ export const foilBalloonProducts: FoilBalloonProduct[] = [
     id: "jumbo-round-foil",
     name: "20\" Pastel Heart Foil Balloon",
     description: "",
-    image: "/images/products/foil-balloon/heart-20-matte-pastel/02-matte-pastel-pink.png",
-    alt: "20 inch Pastel Heart Foil Balloon",
+    image: "/images/products/foil-balloon/019.jpg",
+    alt: "Jumbo 36-40 inch Round Foil Balloons",
     colors: ["Matte White", "Matte Pastel Pink", "Matte Pastel Purple", "Matte Pastel Blue", "Matte Pastel Yellow", "Matte Pastel Green"],
     colorImages: {
       "Matte White": "/images/products/foil-balloon/heart-20-matte-pastel/01-matte-white.png",
