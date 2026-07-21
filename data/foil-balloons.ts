@@ -73,8 +73,9 @@ export const foilBalloonProducts: FoilBalloonProduct[] = [
     alt: "Number Foil Balloons in Gold, Silver, Rose Gold, Blue",
     colors: ["Silver", "Gold", "Rose Gold", "Blue"],
     pricing: [
-      { size: "Size 16\" (Non-Float)", airPrice: 90, heliumPrice: 0 },
-      { size: "Size 40\" (Non-Float)", airPrice: 390, heliumPrice: 690 },
+      { size: "Size 5\" (Non-Float)", airPrice: 20, heliumPrice: 0 },
+      { size: "Size 10\" (Non-Float)", airPrice: 25, heliumPrice: 0 },
+      { size: "Size 18\" (Non-Float)", airPrice: 90, heliumPrice: 170 },
     ],
     addOns: {
       title: "Add Message on 18\" Foil Balloon",
