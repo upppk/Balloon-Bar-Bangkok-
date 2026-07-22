@@ -138,7 +138,7 @@ export const foilBalloonProducts: FoilBalloonProduct[] = [
   },
   {
     id: "alphabet-foil",
-    name: "Alphabet Foil Balloon",
+    name: "18\" Round Foil Balloon (Standard Color)",
     description: "",
     image: "/images/products/foil-balloon/005.jpg",
     alt: "Alphabet Foil Balloons A-Z",
