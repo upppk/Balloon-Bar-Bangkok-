@@ -142,11 +142,20 @@ export const foilBalloonProducts: FoilBalloonProduct[] = [
     description: "",
     image: "/images/products/foil-balloon/005.jpg",
     alt: "Alphabet Foil Balloons A-Z",
-    colors: ["Silver", "Rose Gold", "Gold", "Matte Gold", "Pink", "Blue", "White", "Red", "Purple", "Black"],
+    colors: ["Silver", "Rose Gold", "Pink", "Blue", "Dark Blue", "Purple", "Hot Pink", "Red", "Orange", "Lime Green", "Green", "Gold", "Black"],
     pricing: [
-      { size: "Size 16\" (Non-Float)", airPrice: 90, heliumPrice: 0 },
-      { size: "Size 40\" (Non-Float)", airPrice: 390, heliumPrice: 690 },
+      { size: "Size 5\" (Non-Float)", airPrice: 20, heliumPrice: 0 },
+      { size: "Size 10\" (Non-Float)", airPrice: 25, heliumPrice: 0 },
+      { size: "Size 18\" (Non-Float)", airPrice: 90, heliumPrice: 170 },
     ],
+    addOns: {
+      title: "Add Message on 18\" Foil Balloon",
+      items: [
+        { name: "Plain Color", price: 25 },
+        { name: "Silver and Gold", price: 50 },
+        { name: "Individual Balloon Weights", price: 10 },
+      ],
+    },
   },
   {
     id: "heart-foil-18",
