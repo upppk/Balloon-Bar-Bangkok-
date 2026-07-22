@@ -112,6 +112,17 @@ export const foilBalloonProducts: FoilBalloonProduct[] = [
     image: "/images/products/foil-balloon/004.jpg",
     alt: "Number Foil Balloons in Pastel Colors",
     colors: ["Matte Cream", "Matte Caramel", "Matte Chocolate", "Matte Red", "Matte Burgundy", "Pastel Pink", "Pastel Blue", "Pastel Purple", "Pastel Green"],
+    colorImages: {
+      "Matte Cream": "/images/products/foil-balloon/star-18-matte-pastel-colors/01-matte-cream.png",
+      "Matte Caramel": "/images/products/foil-balloon/star-18-matte-pastel-colors/02-matte-caramel.png",
+      "Matte Chocolate": "/images/products/foil-balloon/star-18-matte-pastel-colors/03-matte-chocolate.png",
+      "Matte Red": "/images/products/foil-balloon/star-18-matte-pastel-colors/04-matte-red.png",
+      "Matte Burgundy": "/images/products/foil-balloon/star-18-matte-pastel-colors/05-matte-burgundy.png",
+      "Pastel Pink": "/images/products/foil-balloon/star-18-matte-pastel-colors/07-pastel-pink.png",
+      "Pastel Blue": "/images/products/foil-balloon/star-18-matte-pastel-colors/06-pastel-blue.png",
+      "Pastel Purple": "/images/products/foil-balloon/star-18-matte-pastel-colors/08-pastel-purple.png",
+      "Pastel Green": "/images/products/foil-balloon/star-18-matte-pastel-colors/09-pastel-green.png",
+    },
     pricing: [
       { size: "Size 18\" Pastel Color (Non-Float)", airPrice: 90, heliumPrice: 170 },
       { size: "Size 18\" - Matte Color (Non-Float)", airPrice: 100, heliumPrice: 190 },
