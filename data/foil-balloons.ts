@@ -111,11 +111,19 @@ export const foilBalloonProducts: FoilBalloonProduct[] = [
     description: "",
     image: "/images/products/foil-balloon/004.jpg",
     alt: "Number Foil Balloons in Pastel Colors",
-    colors: ["White", "Cream", "Caramel", "Green", "Pastel Blue", "Pastel Pink", "Black"],
+    colors: ["Matte Cream", "Matte Caramel", "Matte Chocolate", "Matte Red", "Matte Burgundy", "Pastel Pink", "Pastel Blue", "Pastel Purple", "Pastel Green"],
     pricing: [
-      { size: "Size 16\" (Non-Float)", airPrice: 90, heliumPrice: 0 },
-      { size: "Size 40\" (Non-Float)", airPrice: 390, heliumPrice: 690 },
+      { size: "Size 18\" Pastel Color (Non-Float)", airPrice: 90, heliumPrice: 170 },
+      { size: "Size 18\" - Matte Color (Non-Float)", airPrice: 100, heliumPrice: 190 },
     ],
+    addOns: {
+      title: "Add Message on 18\" Foil Balloon",
+      items: [
+        { name: "Plain Color", price: 25 },
+        { name: "Silver and Gold", price: 50 },
+        { name: "Individual Balloon Weights", price: 10 },
+      ],
+    },
   },
   {
     id: "alphabet-foil",
