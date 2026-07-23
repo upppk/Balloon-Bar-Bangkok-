@@ -22,9 +22,6 @@ export default function About() {
               sizes="(min-width: 768px) 40vw, 90vw"
             />
           </div>
-          <div className="absolute -bottom-6 -right-6 w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-yellow border-4 border-cream shadow-lg flex items-center justify-center text-center font-heading font-bold text-navy-dark text-sm sm:text-base rotate-6 p-3">
-            Premium Balloon Styling
-          </div>
         </div>
 
         <div>
