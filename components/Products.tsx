@@ -1,6 +1,14 @@
+import Link from "next/link";
 import { signatureOfferings, specialCollections } from "@/data/products";
 
 const cardAccents = ["bg-red", "bg-navy", "bg-yellow", "bg-pink"];
+
+const productLinks: Record<string, string | null> = {
+  "Latex Balloon": "/latex-balloons",
+  "Clear Bubble Balloon": null,
+  "Premium Foil Balloon": "/foil-balloons",
+  "Themed Balloon Bundle": null,
+};
 
 export default function Products() {
   return (
@@ -16,23 +24,35 @@ export default function Products() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-          {signatureOfferings.map((item, i) => (
-            <div
-              key={item.name}
-              className="rounded-3xl bg-cream p-6 shadow-lg flex flex-col"
-            >
-              <span
-                className={`inline-block w-10 h-10 rounded-full ${cardAccents[i % cardAccents.length]} mb-4`}
-                aria-hidden
-              />
-              <h3 className="font-heading font-bold text-xl text-navy mb-2">
-                {item.name}
-              </h3>
-              <p className="text-sm text-foreground/75 leading-relaxed">
-                {item.description}
-              </p>
-            </div>
-          ))}
+          {signatureOfferings.map((item, i) => {
+            const href = productLinks[item.name];
+            const Card = (
+              <div
+                className="rounded-3xl bg-cream p-6 shadow-lg flex flex-col hover:shadow-xl transition-shadow"
+              >
+                <span
+                  className={`inline-block w-10 h-10 rounded-full ${cardAccents[i % cardAccents.length]} mb-4`}
+                  aria-hidden
+                />
+                <h3 className="font-heading font-bold text-xl text-navy mb-2">
+                  {item.name}
+                </h3>
+                <p className="text-sm text-foreground/75 leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            );
+
+            return href ? (
+              <Link key={item.name} href={href}>
+                {Card}
+              </Link>
+            ) : (
+              <div key={item.name}>
+                {Card}
+              </div>
+            );
+          })}
         </div>
 
         <div className="text-center mb-14">
