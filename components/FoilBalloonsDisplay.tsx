@@ -3,10 +3,17 @@
 import { useState } from "react";
 import { foilBalloonProducts } from "@/data/foil-balloons";
 import { site } from "@/data/site";
+import { FoilBalloonType, filterFoilBalloonsByType, foilBalloonTypeNames } from "@/utils/foilBalloonCategories";
 
-export default function FoilBalloonsDisplay() {
+interface FoilBalloonsDisplayProps {
+  type?: FoilBalloonType;
+}
+
+export default function FoilBalloonsDisplay({ type }: FoilBalloonsDisplayProps) {
   const [selectedProduct, setSelectedProduct] = useState<typeof foilBalloonProducts[0] | null>(null);
   const [selectedColor, setSelectedColor] = useState<string>("");
+
+  const productsToDisplay = type ? filterFoilBalloonsByType(type) : foilBalloonProducts;
 
   const openColorSelector = (product: typeof foilBalloonProducts[0]) => {
     setSelectedProduct(product);
@@ -22,14 +29,14 @@ export default function FoilBalloonsDisplay() {
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <h2 className="font-heading font-bold text-3xl sm:text-4xl text-navy text-center mb-2">
-          ลูกโป่งฟลอย Foil Balloons
+          {type ? foilBalloonTypeNames[type] : "ลูกโป่งฟลอย Foil Balloons"}
         </h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           ลูกโป่งฟลอยเกรดสูง ลอยได้นาน หลากสีและทรงให้เลือก ราคากันน้ำเหลา ทั้งปรึกษาได้ฟรี
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {foilBalloonProducts.map((product) => (
+          {productsToDisplay.map((product) => (
             <div
               key={product.id}
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
