@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { foilBalloonProducts } from "@/data/foil-balloons";
 import { site } from "@/data/site";
 import { FoilBalloonType, filterFoilBalloonsByType, foilBalloonTypeNames } from "@/utils/foilBalloonCategories";
@@ -8,6 +9,8 @@ import { FoilBalloonType, filterFoilBalloonsByType, foilBalloonTypeNames } from 
 interface FoilBalloonsDisplayProps {
   type?: FoilBalloonType;
 }
+
+const categoryTypes: FoilBalloonType[] = ["heart", "star", "round", "orbz", "cartoon", "number"];
 
 export default function FoilBalloonsDisplay({ type }: FoilBalloonsDisplayProps) {
   const [selectedProduct, setSelectedProduct] = useState<typeof foilBalloonProducts[0] | null>(null);
@@ -25,6 +28,9 @@ export default function FoilBalloonsDisplay({ type }: FoilBalloonsDisplayProps) 
     setSelectedColor("");
   };
 
+  // Show category folders on main page, products on category pages
+  const showCategoryFolders = !type;
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
@@ -35,7 +41,37 @@ export default function FoilBalloonsDisplay({ type }: FoilBalloonsDisplayProps) 
           ลูกโป่งฟลอยเกรดสูง ลอยได้นาน หลากสีและทรงให้เลือก ราคากันน้ำเหลา ทั้งปรึกษาได้ฟรี
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Category Folders on Main Page */}
+        {showCategoryFolders && (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            {categoryTypes.map((catType) => {
+              const productsInCategory = filterFoilBalloonsByType(catType);
+              return (
+                <Link
+                  key={catType}
+                  href={`/foil-balloons/${catType}`}
+                  className="group bg-gradient-to-br from-navy to-blue-700 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:scale-105 cursor-pointer"
+                >
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="font-heading font-bold text-2xl text-white">
+                      {foilBalloonTypeNames[catType]}
+                    </h3>
+                    <span className="text-3xl">📁</span>
+                  </div>
+                  <p className="text-blue-100 mb-4">
+                    {productsInCategory.length} สินค้า
+                  </p>
+                  <div className="flex items-center gap-2 text-yellow-300 group-hover:gap-4 transition-all">
+                    <span>ดูทั้งหมด</span>
+                    <span>→</span>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        )}
+
+        <div className={showCategoryFolders ? "hidden" : "grid grid-cols-1 md:grid-cols-2 gap-8"}>
           {productsToDisplay.map((product) => (
             <div
               key={product.id}
