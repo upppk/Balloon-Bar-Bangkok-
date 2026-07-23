@@ -5,7 +5,6 @@ const cardAccents = ["bg-red", "bg-navy", "bg-yellow", "bg-pink"];
 
 const productLinks: Record<string, string | null> = {
   "Latex Balloon": "/latex-balloons",
-  "Clear Bubble Balloon": null,
   "Premium Foil Balloon": "/foil-balloons",
   "Themed Balloon Bundle": null,
   "Balloon Garland & Backdrop": null,

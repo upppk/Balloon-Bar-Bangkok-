@@ -20,12 +20,6 @@ export const signatureOfferings: Product[] = [
       "ลูกโป่งยางยืด นุ่ม เนื้อนิ่ม เติมได้ทั้งลมและก๊าซฮีเลียม มีให้เลือกหลายทรง ทั้งทรงกลมและทรงยาว เหมาะกับงานปาร์ตี้และตกแต่งทุกโอกาส",
   },
   {
-    name: "Clear Bubble Balloon",
-    nameEn: "Clear Bubble Balloon",
-    description:
-      "ลูกโป่งใสทรงกลม ยืดหยุ่นและทนทาน อยู่ได้นาน เติมลมหรือฮีเลียมได้ ความใสช่วยให้ใส่คอนเฟตตีหรือของตกแต่งชิ้นเล็กๆ ไว้ข้างในได้อย่างสวยงาม",
-  },
-  {
     name: "Premium Foil Balloon",
     nameEn: "Premium Foil Balloon",
     description:
