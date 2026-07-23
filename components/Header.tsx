@@ -5,11 +5,28 @@ import Link from "next/link";
 import { useState } from "react";
 import { site } from "@/data/site";
 
-const navLinks = [
+type NavItem = {
+  href: string;
+  label: string;
+  children?: { href: string; label: string }[];
+};
+
+const navLinks: NavItem[] = [
   { href: "/#about", label: "About" },
   { href: "/#portfolio", label: "Portfolio" },
   { href: "/catalog", label: "Catalog" },
-  { href: "/foil-balloons", label: "Foil Balloons" },
+  {
+    href: "/foil-balloons",
+    label: "Foil Balloons",
+    children: [
+      { href: "/foil-balloons#heart", label: "Heart Foil Balloon" },
+      { href: "/foil-balloons#star", label: "Star Foil Balloon" },
+      { href: "/foil-balloons#round", label: "Round Foil Balloon" },
+      { href: "/foil-balloons#orbz", label: "Orbz Balloon" },
+      { href: "/foil-balloons#cartoon", label: "Cartoon Foil Balloon" },
+      { href: "/foil-balloons#number", label: "Number & Alphabet Balloon" },
+    ],
+  },
   { href: "/latex-balloons", label: "Latex Balloons" },
   { href: "/products", label: "Menu & Pricing" },
   { href: "/#contact", label: "Contact" },
@@ -17,6 +34,7 @@ const navLinks = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
     <header className="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b-4 border-navy">
@@ -36,9 +54,29 @@ export default function Header() {
 
         <nav className="hidden xl:flex items-center gap-5 font-medium text-navy text-[15px] whitespace-nowrap">
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href} className="hover:text-red transition-colors">
-              {link.label}
-            </a>
+            <div
+              key={link.href}
+              className="relative group"
+              onMouseEnter={() => setOpenDropdown(link.label)}
+              onMouseLeave={() => setOpenDropdown(null)}
+            >
+              <a href={link.href} className="hover:text-red transition-colors py-2 block">
+                {link.label}
+              </a>
+              {link.children && (
+                <div className="absolute left-0 mt-0 w-48 bg-white border-2 border-navy/10 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  {link.children.map((child) => (
+                    <a
+                      key={child.href}
+                      href={child.href}
+                      className="block px-4 py-2.5 text-navy hover:text-red hover:bg-navy/5 transition-colors first:rounded-t-md last:rounded-b-md"
+                    >
+                      {child.label}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </nav>
 
