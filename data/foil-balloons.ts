@@ -179,6 +179,12 @@ export const foilBalloonProducts: FoilBalloonProduct[] = [
     image: "/images/products/foil-balloon/006.jpg",
     alt: "18 inch Round Foil Balloons - Matte Colors",
     colors: ["White", "Cream", "Caramel", "Chocolate"],
+    colorImages: {
+      "White": "/images/products/foil-balloon/round-18-matte-colors/01-white.png",
+      "Cream": "/images/products/foil-balloon/round-18-matte-colors/02-cream.png",
+      "Caramel": "/images/products/foil-balloon/round-18-matte-colors/03-caramel.png",
+      "Chocolate": "/images/products/foil-balloon/round-18-matte-colors/04-chocolate.png",
+    },
     pricing: [
       { size: "Size 18\" Pastel Color (Non-Float)", airPrice: 90, heliumPrice: 170 },
       { size: "Size 18\" - Matte Color (Non-Float)", airPrice: 100, heliumPrice: 190 },
