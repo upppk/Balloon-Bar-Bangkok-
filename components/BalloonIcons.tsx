@@ -220,7 +220,7 @@ export function DeliveryIcon({ size = 24, className = "" }: { size?: number; cla
   );
 }
 
-export function BalloonIconMap: Record<string, React.FC<{ size?: number; className?: string }>> = {
+export const BalloonIconMap: Record<string, React.FC<{ size?: number; className?: string }>> = {
   heart: HeartBalloonIcon,
   star: StarBalloonIcon,
   round: RoundBalloonIcon,
