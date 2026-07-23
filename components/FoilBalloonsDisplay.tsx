@@ -5,6 +5,7 @@ import Link from "next/link";
 import { foilBalloonProducts } from "@/data/foil-balloons";
 import { site } from "@/data/site";
 import { FoilBalloonType, filterFoilBalloonsByType, foilBalloonTypeNames } from "@/utils/foilBalloonCategories";
+import { BalloonIconMap, HeliumIcon, QualityIcon, CustomPrintIcon, DeliveryIcon } from "@/components/BalloonIcons";
 
 interface FoilBalloonsDisplayProps {
   type?: FoilBalloonType;
@@ -50,18 +51,22 @@ export default function FoilBalloonsDisplay({ type }: FoilBalloonsDisplayProps) 
                 <Link
                   key={catType}
                   href={`/foil-balloons/${catType}`}
-                  className="group bg-gradient-to-br from-navy to-blue-700 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:scale-105 cursor-pointer"
+                  className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:scale-105 cursor-pointer border border-gray-200"
                 >
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="font-heading font-bold text-2xl text-white">
+                    <h3 className="font-heading font-bold text-xl text-navy">
                       {foilBalloonTypeNames[catType]}
                     </h3>
-                    <span className="text-3xl">📁</span>
+                    {BalloonIconMap[catType] && (
+                      <div className="w-10 h-10 text-navy">
+                        {BalloonIconMap[catType]({ size: 40 })}
+                      </div>
+                    )}
                   </div>
-                  <p className="text-blue-100 mb-4">
+                  <p className="text-gray-600 mb-4 text-sm">
                     {productsInCategory.length} สินค้า
                   </p>
-                  <div className="flex items-center gap-2 text-yellow-300 group-hover:gap-4 transition-all">
+                  <div className="flex items-center gap-2 text-orange-600 group-hover:gap-4 transition-all font-medium text-sm">
                     <span>ดูทั้งหมด</span>
                     <span>→</span>
                   </div>
@@ -162,29 +167,49 @@ export default function FoilBalloonsDisplay({ type }: FoilBalloonsDisplayProps) 
             <span>💡</span> ข้อมูลเพิ่มเติม
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
-            <div>
-              <p className="font-semibold text-navy mb-2">🎈 เติมลมฮีเลียม (Helium)</p>
-              <p className="text-sm">
-                ราคาฮีเลียมเป็นราคาเพิ่มเติม ใช้สำหรับลูกโป่งที่ต้องการให้ลอยได้นาน โดยไม่รวมในราคาที่แสดง
-              </p>
+            <div className="flex gap-4">
+              <div className="w-6 h-6 text-navy flex-shrink-0 mt-1">
+                <HeliumIcon size={24} />
+              </div>
+              <div>
+                <p className="font-semibold text-navy mb-2">เติมลมฮีเลียม (Helium)</p>
+                <p className="text-sm">
+                  ราคาฮีเลียมเป็นราคาเพิ่มเติม ใช้สำหรับลูกโป่งที่ต้องการให้ลอยได้นาน โดยไม่รวมในราคาที่แสดง
+                </p>
+              </div>
             </div>
-            <div>
-              <p className="font-semibold text-navy mb-2">⏱️ ระยะเวลาลอย</p>
-              <p className="text-sm">
-                ระยะเวลาลอยขึ้นอยู่กับสภาพแวดล้อม อุณหภูมิ ความชื้น และคุณภาพของฮีเลียม
-              </p>
+            <div className="flex gap-4">
+              <div className="w-6 h-6 text-navy flex-shrink-0 mt-1">
+                <QualityIcon size={24} />
+              </div>
+              <div>
+                <p className="font-semibold text-navy mb-2">ระยะเวลาลอย</p>
+                <p className="text-sm">
+                  ระยะเวลาลอยขึ้นอยู่กับสภาพแวดล้อม อุณหภูมิ ความชื้น และคุณภาพของฮีเลียม
+                </p>
+              </div>
             </div>
-            <div>
-              <p className="font-semibold text-navy mb-2">✏️ เพิ่มข้อความหรือชื่อ</p>
-              <p className="text-sm">
-                สามารถพิมพ์ข้อความ หรือชื่อลงบนลูกโป่งได้ คิดค่าพิมพ์เพิ่มเติมตามจำนวนตัวอักษร
-              </p>
+            <div className="flex gap-4">
+              <div className="w-6 h-6 text-navy flex-shrink-0 mt-1">
+                <CustomPrintIcon size={24} />
+              </div>
+              <div>
+                <p className="font-semibold text-navy mb-2">เพิ่มข้อความหรือชื่อ</p>
+                <p className="text-sm">
+                  สามารถพิมพ์ข้อความ หรือชื่อลงบนลูกโป่งได้ คิดค่าพิมพ์เพิ่มเติมตามจำนวนตัวอักษร
+                </p>
+              </div>
             </div>
-            <div>
-              <p className="font-semibold text-navy mb-2">📦 การจัดส่ง</p>
-              <p className="text-sm">
-                สั่งได้ทุกวัน ใช้เวลา 1-3 วันในการเตรียม ส่งได้ทั่วประเทศ กรุงเทพและปริมณฑล ส่งวันเดียว
-              </p>
+            <div className="flex gap-4">
+              <div className="w-6 h-6 text-navy flex-shrink-0 mt-1">
+                <DeliveryIcon size={24} />
+              </div>
+              <div>
+                <p className="font-semibold text-navy mb-2">การจัดส่ง</p>
+                <p className="text-sm">
+                  สั่งได้ทุกวัน ใช้เวลา 1-3 วันในการเตรียม ส่งได้ทั่วประเทศ กรุงเทพและปริมณฑล ส่งวันเดียว
+                </p>
+              </div>
             </div>
           </div>
 
