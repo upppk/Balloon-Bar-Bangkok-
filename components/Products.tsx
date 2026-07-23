@@ -8,6 +8,7 @@ const productLinks: Record<string, string | null> = {
   "Clear Bubble Balloon": null,
   "Premium Foil Balloon": "/foil-balloons",
   "Themed Balloon Bundle": null,
+  "Balloon Garland & Backdrop": null,
 };
 
 export default function Products() {

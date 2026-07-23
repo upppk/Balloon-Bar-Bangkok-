@@ -37,6 +37,12 @@ export const signatureOfferings: Product[] = [
     description:
       "ชุดลูกโป่งจับคู่ธีมหรือโทนสีที่ออกแบบมาโดยเฉพาะ ช่วยให้งานปาร์ตี้หรืออีเวนต์ของคุณดูครบและมีสไตล์ได้ง่ายๆ",
   },
+  {
+    name: "Balloon Garland & Backdrop",
+    nameEn: "Balloon Garland & Backdrop",
+    description:
+      "แบ็คดรอปลูกโป่งสั่งทำตามธีมและขนาดพื้นที่ของงาน ออกแบบและติดตั้งบูธหรือสถานที่จัดงานแบบกำหนดเอง ผสานความคิดสร้างสรรค์สุนทรียภาพ",
+  },
 ];
 
 export const specialCollections: Product[] = [
