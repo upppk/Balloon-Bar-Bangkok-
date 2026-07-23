@@ -64,7 +64,7 @@ export default function Header() {
                 {link.label}
               </a>
               {link.children && (
-                <div className="absolute left-0 mt-0 w-48 bg-white border-2 border-navy/10 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div className="absolute left-0 top-full mt-1 w-48 bg-white border-2 border-navy/10 rounded-lg shadow-lg z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none group-hover:pointer-events-auto">
                   {link.children.map((child) => (
                     <a
                       key={child.href}
