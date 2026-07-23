@@ -174,16 +174,23 @@ export const foilBalloonProducts: FoilBalloonProduct[] = [
   },
   {
     id: "heart-foil-18",
-    name: "18\" Heart Foil Balloon",
+    name: "18\" Round Foil Balloon (Matte Color)",
     description: "",
     image: "/images/products/foil-balloon/006.jpg",
-    alt: "18 inch Heart Foil Balloons",
-    colors: ["White", "Silver", "Rose Gold", "Lavender", "Purple", "Turquoise", "Light Blue", "Blue", "Dark Blue", "Pink", "Hot Pink", "Red", "Orange", "Lime Green", "Green", "Gold", "Black"],
+    alt: "18 inch Round Foil Balloons - Matte Colors",
+    colors: ["White", "Cream", "Caramel", "Chocolate"],
     pricing: [
-      { size: "Size 5\" (Non-Float)", airPrice: 20, heliumPrice: 0 },
-      { size: "Size 10\" (Non-Float)", airPrice: 25, heliumPrice: 0 },
-      { size: "Size 18\" (Non-Float)", airPrice: 90, heliumPrice: 170 },
+      { size: "Size 18\" Pastel Color (Non-Float)", airPrice: 90, heliumPrice: 170 },
+      { size: "Size 18\" - Matte Color (Non-Float)", airPrice: 100, heliumPrice: 190 },
     ],
+    addOns: {
+      title: "Add Message on 18\" Foil Balloon",
+      items: [
+        { name: "Plain Color", price: 25 },
+        { name: "Silver and Gold", price: 50 },
+        { name: "Individual Balloon Weights", price: 10 },
+      ],
+    },
   },
   {
     id: "heart-foil-18-pastel",
