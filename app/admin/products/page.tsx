@@ -61,9 +61,10 @@ export default function AdminProductsPage() {
     }
   };
 
-  const getAuthHeader = () => {
+  const getAuthHeader = (): HeadersInit => {
     const token = localStorage.getItem('adminToken');
-    return token ? { 'Authorization': `Bearer ${token}` } : {};
+    if (!token) return {};
+    return { 'Authorization': `Bearer ${token}` };
   };
 
   const loadProducts = async () => {
