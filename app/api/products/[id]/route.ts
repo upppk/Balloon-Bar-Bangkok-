@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs';
 import { join } from 'path';
 import { NextRequest, NextResponse } from 'next/server';
+import { requireAdminAuth } from '@/lib/auth';
 
 const dataPath = join(process.cwd(), 'data', 'products.json');
 
@@ -18,6 +19,10 @@ async function saveProducts(data: any) {
 }
 
 export async function PUT(request: NextRequest, { params }: { params: { id: string } }) {
+  if (!requireAdminAuth(request)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   try {
     const id = parseInt(params.id);
     const body = await request.json();
@@ -42,6 +47,10 @@ export async function PUT(request: NextRequest, { params }: { params: { id: stri
 }
 
 export async function DELETE(request: NextRequest, { params }: { params: { id: string } }) {
+  if (!requireAdminAuth(request)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   try {
     const id = parseInt(params.id);
     const data = await getProducts();

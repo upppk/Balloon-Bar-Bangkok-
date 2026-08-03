@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs';
 import { join } from 'path';
 import { NextRequest, NextResponse } from 'next/server';
+import { requireAdminAuth } from '@/lib/auth';
 
 const dataPath = join(process.cwd(), 'data', 'products.json');
 
@@ -27,6 +28,10 @@ export async function GET() {
 }
 
 export async function POST(request: NextRequest) {
+  if (!requireAdminAuth(request)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   try {
     const body = await request.json();
     const data = await getProducts();

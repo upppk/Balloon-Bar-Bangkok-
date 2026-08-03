@@ -12,6 +12,9 @@ interface Product {
 }
 
 export default function AdminProductsPage() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [password, setPassword] = useState('');
+  const [passwordError, setPasswordError] = useState('');
   const [products, setProducts] = useState<Product[]>([]);
   const [formData, setFormData] = useState({
     name: '',
@@ -24,12 +27,50 @@ export default function AdminProductsPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    loadProducts();
+    const token = localStorage.getItem('adminToken');
+    if (token) {
+      setIsAuthenticated(true);
+      loadProducts();
+    } else {
+      setLoading(false);
+    }
   }, []);
+
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setPasswordError('');
+
+    try {
+      const response = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password }),
+      });
+
+      if (response.ok) {
+        const { token } = await response.json();
+        localStorage.setItem('adminToken', token);
+        setIsAuthenticated(true);
+        setPassword('');
+        loadProducts();
+      } else {
+        setPasswordError('รหัสผ่านไม่ถูกต้อง');
+      }
+    } catch (error) {
+      setPasswordError('เข้าสู่ระบบล้มเหลว');
+    }
+  };
+
+  const getAuthHeader = () => {
+    const token = localStorage.getItem('adminToken');
+    return token ? { 'Authorization': `Bearer ${token}` } : {};
+  };
 
   const loadProducts = async () => {
     try {
-      const response = await fetch('/api/products');
+      const response = await fetch('/api/products', {
+        headers: getAuthHeader(),
+      });
       const data = await response.json();
       setProducts(data.products || []);
     } catch (error) {
@@ -56,7 +97,10 @@ export default function AdminProductsPage() {
 
       const response = await fetch(url, {
         method,
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          ...getAuthHeader(),
+        },
         body: JSON.stringify(formData),
       });
 
@@ -84,7 +128,10 @@ export default function AdminProductsPage() {
     if (!confirm('ต้องการลบสินค้านี้?')) return;
 
     try {
-      await fetch(`/api/products/${id}`, { method: 'DELETE' });
+      await fetch(`/api/products/${id}`, {
+        method: 'DELETE',
+        headers: getAuthHeader(),
+      });
       loadProducts();
     } catch (error) {
       console.error('Failed to delete product:', error);
@@ -103,6 +150,39 @@ export default function AdminProductsPage() {
   };
 
   if (loading) return <div className="p-8">กำลังโหลด...</div>;
+
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen bg-gradient-to-b from-navy to-blue-700 flex items-center justify-center p-4">
+        <div className="bg-white rounded-lg shadow-2xl p-8 w-full max-w-md">
+          <h1 className="text-3xl font-bold text-navy mb-2 text-center">🔐 Admin</h1>
+          <p className="text-gray-600 text-center mb-6">กรุณากรอกรหัสผ่านเพื่อเข้าสู่ระบบ</p>
+
+          <form onSubmit={handleLogin} className="space-y-4">
+            <div>
+              <label className="block text-sm font-semibold text-navy mb-2">รหัสผ่าน</label>
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                placeholder="กรอกรหัสผ่าน"
+                required
+              />
+              {passwordError && <p className="text-red-500 text-sm mt-1">{passwordError}</p>}
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2 rounded-lg transition"
+            >
+              เข้าสู่ระบบ
+            </button>
+          </form>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50 p-8">
