@@ -1,9 +1,4 @@
 {
-  "buildCommand": "next build",
-  "outputDirectory": ".next",
-  "env": {
-    "ADMIN_PASSWORD": "balloon123"
-  },
   "headers": [
     {
       "source": "/api/(.*)",
