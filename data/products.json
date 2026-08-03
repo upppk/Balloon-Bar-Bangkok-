@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Little Precious Newborn Baby",
+      "price": 990,
+      "description": "1 Agate 36\" White Latex with Gold Message",
+      "image": "/images/products/newborn-baby.jpg",
+      "category": "special-bundles"
+    },
+    {
+      "id": 2,
+      "name": "Balloon Bouquet - 7 Balloons - Silver Star Foil 18\" + Message",
+      "price": 595,
+      "description": "Silver Star Foil 18\" + Message x1\nChrome Green x2\nPastel Green x1\nPastel Blue x2\nWhite x1",
+      "image": "/images/products/balloon-bouquet-silver.jpg",
+      "category": "foil-balloons"
+    }
+  ]
+}
