@@ -13,6 +13,7 @@ interface Product {
 
 export default function AdminProductsPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  // Force rebuild
   const [password, setPassword] = useState('');
   const [passwordError, setPasswordError] = useState('');
   const [products, setProducts] = useState<Product[]>([]);
