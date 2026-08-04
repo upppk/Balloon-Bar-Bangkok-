@@ -2,50 +2,146 @@
   "products": [
     {
       "id": 1,
-      "name": "Little Precious Newborn Baby",
-      "price": 990,
-      "description": "1 Agate 36\" White Latex with Gold Message",
-      "image": "https://via.placeholder.com/400?text=Newborn+Baby+Bundle",
-      "category": "special-bundles"
+      "name": "Baby Shower Blue Latex Bundle - 10 Pack",
+      "price": 320,
+      "description": "10 Pastel Blue Latex Balloons + Ribbons",
+      "image": "/images/products/1.jpg",
+      "category": "latex-balloons"
     },
     {
       "id": 2,
-      "name": "Balloon Bouquet - 7 Balloons - Silver Star Foil 18\" + Message",
-      "price": 595,
-      "description": "Silver Star Foil 18\" + Message x1, Chrome Green x2, Pastel Green x1, Pastel Blue x2, White x1",
-      "image": "https://via.placeholder.com/400?text=Silver+Star+Bouquet",
+      "name": "Baby Boy Blue Foil Set - Premium",
+      "price": 550,
+      "description": "Blue Star Foil 18\" + 5 Latex Balloons + Message Card",
+      "image": "/images/products/2.jpg",
       "category": "foil-balloons"
     },
     {
       "id": 3,
-      "name": "Heart Love Balloons Bundle",
-      "price": 450,
-      "description": "3 Red Heart Foil 18\" + 2 Gold Heart Foil 18\" + message card",
-      "image": "https://via.placeholder.com/400?text=Heart+Balloons",
-      "category": "foil-balloons"
+      "name": "Welcome Baby Boy Deluxe Bundle",
+      "price": 890,
+      "description": "20 Blue Latex + 2 Star Foil 18\" + Premium Stand + Decorations",
+      "image": "/images/products/3.jpg",
+      "category": "special-bundles"
     },
     {
       "id": 4,
-      "name": "Birthday Party Set - Colorful Mix",
-      "price": 750,
-      "description": "12 Latex balloons in assorted colors + 2 number foil balloons + ribbons",
-      "image": "https://via.placeholder.com/400?text=Birthday+Party+Set",
+      "name": "Baby Shower Pastel Blue Mix",
+      "price": 420,
+      "description": "15 Pastel Blue Latex Balloons in assorted shades",
+      "image": "/images/products/4.jpg",
       "category": "latex-balloons"
     },
     {
       "id": 5,
-      "name": "Wedding Elegance Gold & White",
-      "price": 1200,
-      "description": "20 Gold & White Latex balloons + 4 Gold Star Foil balloons + premium stand",
-      "image": "https://via.placeholder.com/400?text=Wedding+Gold+White",
+      "name": "Little Prince Baby Boy Set",
+      "price": 780,
+      "description": "Blue Foil Crown Balloon + 10 Latex + Message",
+      "image": "/images/products/5.jpg",
       "category": "special-bundles"
     },
     {
       "id": 6,
-      "name": "Baby Shower Pink & Blue Set",
-      "price": 680,
-      "description": "10 Pastel Pink + 10 Pastel Blue Latex + 2 Baby Foil balloons",
-      "image": "https://via.placeholder.com/400?text=Baby+Shower+Pink+Blue",
+      "name": "Baby Blue Celebration Package",
+      "price": 1050,
+      "description": "30 Latex Balloons + 3 Foil Stars + Stand + Full Decoration",
+      "image": "/images/products/6.jpg",
+      "category": "special-bundles"
+    },
+    {
+      "id": 7,
+      "name": "Newborn Baby Boy Balloons - Elegant",
+      "price": 650,
+      "description": "Blue & White Mix 20 Latex + 1 Large Star Foil",
+      "image": "/images/products/7.jpg",
+      "category": "foil-balloons"
+    },
+    {
+      "id": 8,
+      "name": "Baby Arrival Blue Bundle",
+      "price": 480,
+      "description": "12 Sky Blue Latex + Ribbons + Gift Tag",
+      "image": "/images/products/8.jpg",
+      "category": "latex-balloons"
+    },
+    {
+      "id": 9,
+      "name": "Sweet Baby Boy Premium Set",
+      "price": 920,
+      "description": "Luxury Blue Foil Balloons + 15 Latex + Premium Packaging",
+      "image": "/images/products/9.jpg",
+      "category": "special-bundles"
+    },
+    {
+      "id": 10,
+      "name": "Baby Blue Classic Bouquet",
+      "price": 580,
+      "description": "7 Blue Foil Balloons 18\" + Message Card + Ribbons",
+      "image": "/images/products/10.jpg",
+      "category": "foil-balloons"
+    },
+    {
+      "id": 11,
+      "name": "Blue Latex Classic - 20 Pack",
+      "price": 540,
+      "description": "20 Premium Quality Blue Latex Balloons",
+      "image": "/images/products/11.jpg",
+      "category": "latex-balloons"
+    },
+    {
+      "id": 12,
+      "name": "Baby Boy Milestone Celebrations",
+      "price": 750,
+      "description": "Number Foil Balloons + Blue Latex Mix + Stand",
+      "image": "/images/products/12.jpg",
+      "category": "special-bundles"
+    },
+    {
+      "id": 13,
+      "name": "Pastel Sky Blue Dreams Bundle",
+      "price": 690,
+      "description": "25 Pastel Blue Latex + 2 Ribbon Bows",
+      "image": "/images/products/13.jpg",
+      "category": "latex-balloons"
+    },
+    {
+      "id": 14,
+      "name": "Royal Blue Baby Shower Deluxe",
+      "price": 1150,
+      "description": "Premium Foil Set + 30 Latex + Stand + Full Arrangement",
+      "image": "/images/products/14.jpg",
+      "category": "special-bundles"
+    },
+    {
+      "id": 15,
+      "name": "Precious Baby Boy Arrival",
+      "price": 820,
+      "description": "Blue Theme Foil Balloons + Premium Latex Mix",
+      "image": "/images/products/15.jpg",
+      "category": "foil-balloons"
+    },
+    {
+      "id": 16,
+      "name": "Baby Blue Cluster Balloons - XL",
+      "price": 1290,
+      "description": "50+ Balloons Blue Mix + 5 Foil Stars + Premium Stand + Decorations",
+      "image": "/images/products/16.jpg",
+      "category": "special-bundles"
+    },
+    {
+      "id": 17,
+      "name": "Sweet Baby Boy Starter Pack",
+      "price": 380,
+      "description": "10 Blue Latex + Simple Ribbon",
+      "image": "/images/products/17.jpg",
+      "category": "latex-balloons"
+    },
+    {
+      "id": 18,
+      "name": "Baby Blue Party Combo",
+      "price": 950,
+      "description": "Mixed Blue Balloons + Foil Elements + Complete Party Setup",
+      "image": "/images/products/18.jpg",
       "category": "special-bundles"
     }
   ]
