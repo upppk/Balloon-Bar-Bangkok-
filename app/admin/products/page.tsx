@@ -295,6 +295,16 @@ export default function AdminProductsPage() {
                   products.map(product => (
                     <div key={product.id} className="border-l-4 border-orange-500 pl-4 py-3 bg-gray-50 rounded hover:bg-gray-100 transition">
                       <div className="flex justify-between items-start gap-4">
+                        {product.image && (
+                          <img
+                            src={product.image}
+                            alt={product.name}
+                            className="w-24 h-24 object-cover rounded border"
+                            onError={(e) => {
+                              e.currentTarget.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="96" height="96"%3E%3Crect fill="%23ddd" width="96" height="96"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23999" font-size="12"%3ENo Image%3C/text%3E%3C/svg%3E';
+                            }}
+                          />
+                        )}
                         <div className="flex-1">
                           <h3 className="font-bold text-navy">{product.name}</h3>
                           <p className="text-lg font-semibold text-orange-600 mt-1">฿ {product.price.toLocaleString()}</p>
